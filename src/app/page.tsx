@@ -56,7 +56,7 @@ export default function Home() {
             {"Card Search"}
           </div>
         </div>
-        <div className='flex gap-4 items-center flex-col max-sm:flex-row w-full mt-2'>
+        <div className='flex gap-4 items-center flex-col w-full mt-2'>
           <div className='rounded-full border flex-col w-full border-solid border-transparent relative transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5'>
             <Input
               type='text'

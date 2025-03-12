@@ -88,7 +88,7 @@ export const buildSearchParamString = (
     prints: allPrints ? 'true' : '',
     extras: extras ? 'true' : '',
   }
-  const searchParams = new URLSearchParams(paramsObj);
+  const searchParams = new URLSearchParams(paramsObj as Record<string, string>);
 if (!name) searchParams.delete('name');
 if (!text) searchParams.delete('o');
 if (!types) searchParams.delete('t');

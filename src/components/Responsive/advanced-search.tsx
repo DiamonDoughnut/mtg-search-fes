@@ -23,7 +23,16 @@ import AdvancedSearchForm from "./advanced-search-form"
 const AdvancedSearch = () => {
  
   const [open, setOpen] = React.useState(false)
-  const isDesktop = window.innerWidth > 797
+  const [isDesktop, setisDesktop] = React.useState(true);
+  React.useEffect(() => {
+    if (window) {
+      if (window.innerWidth > 796) {
+        setisDesktop(true)
+      } else {
+        setisDesktop(false)
+      }
+    }
+  }, [])
 
   if (isDesktop) {
     return (

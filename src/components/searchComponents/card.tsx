@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { Button } from '../ui/button'
-import { LoaderCircle, Repeat2 } from 'lucide-react'
+import { LoaderCircle } from 'lucide-react'
 
 export default function CardComponent({ card, loading }: { card: Card, loading: boolean }) {
     

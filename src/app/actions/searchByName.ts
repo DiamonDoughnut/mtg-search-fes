@@ -1,7 +1,7 @@
 'use server'
 import * as scryfall from 'scryfall-api'
 
-export async function getCardsByName (name: string, page: number = 1) {
+export async function getCardsByName (name: string) {
     try {
         let cardList = await scryfall.Cards.search(name, 1)
         if (!cardList) {

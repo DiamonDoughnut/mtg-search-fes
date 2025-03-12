@@ -1,17 +1,4 @@
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "../ui/select";
-import { useRouter } from "next/navigation";
-import {
-    Pagination,
-    PaginationContent,
-    PaginationEllipsis,
-    PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious,
-  } from "@/components/ui/pagination"
-  
-import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 

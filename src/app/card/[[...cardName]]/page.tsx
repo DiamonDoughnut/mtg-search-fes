@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/tooltip"
 import 'mana-font'
 import 'keyrune'
-import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/searchComponents/footer";
@@ -29,7 +28,6 @@ export default function Page () {
   const [isLoading, setIsLoading] = useState(true);
   const [relatedCards, setRelatedCards] = useState<(Card | undefined)[]>();
   const [doubleFaced, setDoubleFaced] = useState(false)
-  const [flipped, setFlipped] = useState(false);
   const [cardFront, setCardFront] = useState<CardFace | undefined>(undefined)
   const [cardBack, setCardBack] = useState<CardFace | undefined>(undefined)
   const id = searchParams.get('id');

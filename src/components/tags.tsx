@@ -1,6 +1,5 @@
 import React from 'react'
 import { Tags } from './tag-search'
-import { Badge } from './ui/badge'
 import { cn } from '@/lib/utils'
 import { Button } from './ui/button'
 import { XIcon } from 'lucide-react'

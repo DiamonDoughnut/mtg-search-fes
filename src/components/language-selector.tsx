@@ -1,6 +1,5 @@
 import React from 'react'
 import { Select, SelectContent, SelectGroup, SelectTrigger, SelectValue, SelectItem } from './ui/select';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 interface LanguageSelectProps {
@@ -33,7 +32,7 @@ const LanguageSelect = ({ lang, setLang }: LanguageSelectProps) => {
     ]
 
   return (
-    <Select>
+    <Select onValueChange={(value) => setLang(value)} defaultValue={lang}>
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>
